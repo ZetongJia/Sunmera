@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button android:id="@+id/button_take_a_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_take_a_photo"/>
+
+    <Button android:id="@+id/button_choose_from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_choose_from_gallery"/>
+
+    <Button android:id="@+id/button_cancel_choosing_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_cancel"/>
+
+</LinearLayout>

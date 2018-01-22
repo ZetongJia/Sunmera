@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="luminosit.sunmera.activity.SpecificViewActivity">
+
+    <LinearLayout android:id="@+id/linear_specific_view_two_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_button_delete"
+            android:textColor="#FF0000"
+            android:onClick="deleteThisView"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_button_cancel"
+            android:onClick="cancel"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_button_save"
+            android:onClick="saveThisView"/>
+
+
+    </LinearLayout>
+
+    <EditText android:id="@+id/text_box_specific_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_specific_view_two_buttons"/>
+
+    <ImageView android:id="@+id/image_specific_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/text_box_specific_view"
+        />
+
+</RelativeLayout>

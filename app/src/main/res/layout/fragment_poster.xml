@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="luminosit.sunmera.fragment.PosterFragment">
+
+    <Button android:id="@+id/button_poster_saved_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_poster"
+        android:layout_alignParentBottom="true"/>
+
+    <Button android:id="@+id/button_poster_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_submit"
+        android:layout_above="@+id/button_poster_saved_photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_poster_submit"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/medium_icon"
+                android:src="@drawable/happy"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_text_happiest"
+                android:gravity="center"
+                style="@style/font_poster_list"/>
+
+            <ImageView android:id="@+id/button_poster_happiest"
+                style="@style/medium_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/medium_icon"
+                android:src="@drawable/excited"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_text_exciting"
+                android:gravity="center"
+                style="@style/font_poster_list"/>
+
+            <ImageView android:id="@+id/button_poster_exciting"
+                style="@style/medium_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/medium_icon"
+                android:src="@drawable/excellent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_text_awesome"
+                android:gravity="center"
+                style="@style/font_poster_list"/>
+
+            <ImageView android:id="@+id/button_poster_awesome"
+                style="@style/medium_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/medium_icon"
+                android:src="@drawable/grateful"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_text_greateful"
+                android:gravity="center"
+                style="@style/font_poster_list"/>
+
+            <ImageView android:id="@+id/button_poster_grateful"
+                style="@style/medium_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

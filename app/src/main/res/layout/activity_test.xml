@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="luminosit.sunmera.activity.TestActivity">
+
+    <EditText android:id="@+id/input_uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UID/Username"/>
+
+    <EditText android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Text"/>
+
+    <Button android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="save"/>
+
+    <Button android:id="@+id/retrieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve"
+        android:onClick="retrieve"/>
+
+    <Button android:id="@+id/add_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:onClick="addUser"/>
+
+    <Button android:id="@+id/display_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="display"
+        android:onClick="displayAllUsers"/>
+
+    <Button android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="extra"
+        android:onClick="extra"/>
+
+    <TextView android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luminosit.sunmera.activity.CameraActivity">
+
+    <Button android:id="@+id/button_camera_discard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/str_button_discard"
+        android:onClick="discard"/>
+
+    <Button android:id="@+id/button_camera_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/button_camera_discard"
+        android:text="@string/str_button_save"
+        android:onClick="saveImage"/>
+
+    <EditText android:id="@+id/text_camera_input_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_camera_discard"
+        android:hint="@string/str_text_input_note"/>
+
+    <TextView android:id="@+id/text_camera_retake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_camera_input_note"
+        android:text="@string/str_text_retake"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <ImageView android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_camera_retake"
+        android:onClick="retakePhoto"/>
+
+</RelativeLayout>
